@@ -1,0 +1,95 @@
+<style>
+    table, th, td {
+        border:1px solid #ccc;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    th, td { padding:10px 20px; }
+</style>
+
+<h2>상품 구성</h2>
+
+<p>
+<!-- 행은 tr, 각 행의 셀은 th로 구현. 열이 아니라 행을 중심으로 구성한다. -->
+<!-- 비어있는 행이라고 할지라도 td를 써서 만들어줘야 모양이 어긋나지 않는다. -->
+<table>
+    <caption>선물용과 가정용 상품 구성</caption>    <!-- 테이블의 제목 -->
+    <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>개수</th>
+        <th>가격</th>
+    </tr>
+    <tr>
+        <td>선물용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>35,000원</td>
+    </tr>
+    <tr>
+        <td>선물용</td>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>52,000원</td>
+    </tr>
+    <tr>
+        <td>가정용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>30,000원</td>
+    </tr>
+    <tr>
+        <td>가정용</td>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>47,000원</td>
+    </tr>
+</table>
+</p>
+
+<p>
+<table>
+    <caption>요안도라 객실</caption>
+    <!-- 열 전체를 묶어서 선택하려면 colgroup 안에 col 을 사용한다.
+     이 때 행과 마찬가지로 열 개수를 맞춰서 col을 넣어야 한다. -->
+    <colgroup>
+        <col style="background-color: lightgrey;">
+        <col span="3">    <!-- col span으로 여러 열을 지정할 수 있다. -->
+    </colgroup>
+    <thead>
+        <tr style="background-color: darkseagreen;">    <!-- 이 행 전체에 스타일을 적용하려면 이렇게 -->
+            <th>방 이름</th>
+            <th>대상</th>
+            <th>크기</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>유채방</td>
+            <td>여성 도미토리</td>
+            <td rowspan="3" style="background-color: lightpink;">4인실</td>    <!-- 행 병합은 rowspan으로 한다. 셀 하나에면 스타일 지정 가능 -->
+            <td rowspan="4">1인 20,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">동백방</td>
+            <td>동성 도미토리</td>
+            <!-- 병합한 행의 셀에 대해서는 td로 파지 않는다. -->
+        </tr>
+        <tr>
+            <td>가족 1팀</td>
+        </tr>
+        <tr>
+            <td>천혜향방</td>
+            <td>-</td>
+            <td>2인실</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr style="background-color: blanchedalmond;">
+            <td colspan="4">바깥채 전체를 렌트합니다</td>    <!-- 열 병합은 colspan으로 한다. -->
+        </tr>
+    </tfoot>
+</table>
+</p>
