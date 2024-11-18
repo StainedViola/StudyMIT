@@ -1,0 +1,28 @@
+<form>
+    <fieldset>
+        <legend>구매</legend>
+        <ul>
+            <li>
+                <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                <input type="number" min="0" max="5">
+            </li>
+            <li>
+                <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                <input type="number" min="0" max="3">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>의미없는 슬라이더</legend>
+        <input type="range" min="0" max="100" value="20" oninput="document.getElementById('selected-value').innerText = this.value">
+        <span id="selected-value">20</span>
+    </fieldset>
+    <fieldset>
+        <legend>의미없는 날짜</legend>
+        <input type="date" min="2024-11-13" max="2024-12-31" step="3">
+        <input type="time">
+    </fieldset>
+</form>
+<form action="#" method="get">
+    <input type="image" src="../04/images/7.62x39_FMJ_1.jpg" alt="7.62mm" width="100">
+</form>
