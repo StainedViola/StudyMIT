@@ -1,0 +1,30 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+h1 {
+    padding: 10px;
+    background-color: #222;
+    text-align: center;
+    /* color: #fff; */
+}
+p {
+    font-style: italic;
+}
+.accent {
+    border: 1px solid #000;
+    padding: 5px;
+}
+.bg {
+    background-color: #ddd;
+}
+ul {
+    line-height: 150%;
+}
+#container {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #000;
+}

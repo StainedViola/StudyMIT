@@ -1,0 +1,19 @@
+#container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+.accent {
+    font-weight: bold;
+    color: red;
+}
+h1 {
+    /* display: inline-block; */
+    font-size: 40px;
+    background-color: darkblue;
+    color: white;
+}
+p {
+    font-size: xx-large;
+}
