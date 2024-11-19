@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        .container { margin: 20px; width: 200px; height: 100px; line-height: 100px; text-align: center;}
+        .box1 { border-style: solid; }
+        .box2 { border-style: dotted; }
+        .box3 { border-style: dashed; }
+        .corner {
+            border-width: 2px;
+            border-color: blue;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container box1 corner">solid</div>
+    <div class="container box2">dotted</div>
+    <div class="container box3">dashed</div>
+</body>
+</html>
