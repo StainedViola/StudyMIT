@@ -1,29 +1,6 @@
 ## CSS 박스 모델
 
-<style>
-    .boxmodel {
-        border-width: 2px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-right: 8px;
-        padding-left: 8px;
-        margin: 2px 20px 20px;
-        font-weight: bold;
-        color: black;
-    }
-</style>
-<div class="boxmodel" style="width: 300px; margin: 20px 0px; background: #f7cca1; border-color: black; border-style: dashed;">
-    Margin
-    <div class="boxmodel" style="background: #fbdc9e; border-color: black; border-style: solid;">
-        Border
-        <div class="boxmodel" style="background: #c4ce8d; border-color: grey; border-style: dashed;">
-            Padding
-            <div class="boxmodel" style="background: #8db6c1; border-color: grey; border-style: solid; text-align: center;">
-                Content
-            </div>
-        </div>
-    </div>
-</div>
+<img src="box_model.jpg" alt="boxmodel" width="380px"></img>
 
 웹 문서에서 내용을 배치할 때는 요소마다 박스 형태로 구성하고, 이를 *CSS 박스 모델*이라 한다. 박스 모델은 위 그림과 같이 `margin, border, padding, content` 영역으로 구성된다.
 
