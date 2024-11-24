@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            background-color: orange;
+            border-style: dotted;
+            border-width: 10px;
+        }
+        .box1 {
+            background-clip: border-box;
+        }
+        .box2 {
+            background-clip: padding-box;
+        }
+        .box3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box</div>
+    <div class="box2">Box</div>
+    <div class="box3">Box</div>
+</body>
+</html>

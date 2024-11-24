@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .grad1 {
+            background: blue;
+            background: linear-gradient(to right bottom, blue, white);
+        }
+        .grad2 {
+            background: red;
+            background: linear-gradient(45deg, red, white);
+        }
+        .grad3 {
+            background: gold;
+            background: linear-gradient(to bottom, gold, white 20%, gold, gold, white 80%, gold);
+        }
+        .grad4 {
+            background: radial-gradient(circle at 10% 10%, white, black)
+        }
+    </style>
+</head>
+<body>
+    <div class="box grad1"></div>
+    <div class="box grad2"></div>
+    <div class="box grad3"></div>
+    <div class="box grad4"></div>
+</body>
+</html>
